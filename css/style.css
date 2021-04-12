@@ -138,23 +138,24 @@ li {
 	background-color: white;
 	transform: rotate(-26deg) scaleX(0);
 	bottom: 35vh;
-	right: -3vw;
+	right: 1vw;
 	z-index: 20;
 	transition: 0.2s;
 	transform-origin: right;
-}
-.poloska3{
+	}
+	.poloska3{
 	position: absolute;
 	width: 230px;
 	height: 5px;
 	background-color: white;
 	transform: rotate(-26deg) scaleX(0);
-	bottom: 29.5vh;
-	right: -3vw;
+	bottom: 25vh;
+	right: 1vw;
 	z-index: 20;
 	transition: 0.2s;
 	transform-origin: right;
-}
+	}
+
 .poloska_active{
 	transform: rotate(-26deg) scaleX(1);
 	transition: 0.2s;
@@ -166,7 +167,6 @@ li {
 header {
 	width: 100%;
 	margin: 0 auto;
-	height: 20vh;
 }
 .header_inner {
 	width: 100%;
@@ -243,7 +243,10 @@ header {
 	.poloska1{
 		bottom: 25vh;
 	}
+
+
 }
+
 
 @media (max-width: 900px) {
 	header{
@@ -296,25 +299,36 @@ header {
 	.poloska1{
 		right: 20vw;
 	}
+   .body {
+	background-size: auto;
+
+   }
+
 }
+
+
+
 
 /*Intro*/
 
 .intro {
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	display: flex;
-}
 
-.container {
-	width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
 }
 
 
+	.container {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 
-h1 {
-    display: flex;
+
+h1 { 
+	display: flex; 
     font-family: Gotham Pro;
     text-transform: uppercase;
     color: #7083ae;
@@ -323,39 +337,65 @@ h1 {
     justify-content: center;
     font-size: 60px;
     text-decoration: underline #ffffff4a 5px;
-    margin-bottom: 60px;
-	text-align: center;
-}	
+    margin-bottom: 100px;
+}
 
 .text {
     color: white;
     font-family:Gotham Pro Light;
-    font-size: 25px;
+    font-size: 29px;
 }
+
+@media (max-width: 1450px) and (min-width: 900px) {
+ 	/* CSS */
+   .container {
+	width: 93%;
+	max-width: 900px;
+   }
+
+   h1 {
+	font-size: 30px;
+	letter-spacing: 10px;
+	margin-bottom: 30px;
+   }
+
+   .text__sector {
+	max-width: 570px;
+   }
+
+   .text {
+	font-size: 16px;
+	line-height: 1.1;
+   }
+
+   br {
+   margin: 10px;
+   }
+
+	}
+
+ 
 
 
 .text__sector {
-    width: 50%;
-    margin-left: 140px;
+    width: 70%;
+    /*! margin-left: 140px; */
+	text-align: left;
 }
 
 br {
     margin: 15px;
 }
 
-
-
-
-
 /*Tour info*/
 
-.tour__info {
-display: flex;
+.container__2 {
+
 flex-direction: column;
 justify-content: center;
 width: 100%;
 height: 100vh;
-}
+margin-top: 200px;}
 
 
 
@@ -367,7 +407,7 @@ h2 {
     justify-content: center;
     font-size: 40px;
     text-decoration: none;
-
+    margin-bottom: 100px;
 }
 
 .text__sector2 {
@@ -380,8 +420,8 @@ h2 {
 .text2 {
     color: white;
     font-family: Gotham Pro Light;
-
-    font-size: 23px;
+    margin-bottom: 100px;
+    font-size: 27px;
 }
 
 /*Facts*/
@@ -398,23 +438,24 @@ h2 {
 .text3 {
     white-space: pre;
     font-family: Gotham Pro Light;
-
-    font-size: 23px;
+    margin-bottom: 100px;
+    font-size: 30px;
     color: white;
     margin-right: 140px;
 
 }
 
-.facts {
+.container__3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+	margin-top: 200px;
     }
 
 /*Last*/
 
-.last {
+.container__4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -429,7 +470,7 @@ h2 {
 .quote {
     white-space: pre;
     font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 35px;
     color: white;
     justify-content: center;
     display: flex;
@@ -468,3 +509,68 @@ h2 {
 
 }
 
+@media (max-width: 1450px) and (min-width: 600px) {
+	h2{
+		font-size: 20px;
+		margin-bottom: 50px;
+
+	}
+
+	.tour__info {
+		margin-top: 60px;
+		display: block;
+	}
+	.container__2 {
+		width: 97%;
+		margin-top: 120px;
+		height: 0;
+	}
+	.text__sector2 {
+		width: 55%;
+		margin-left: 50px;
+		margin-bottom: 0;
+	}
+ 
+	.text2 {
+		font-size: 16px;
+		margin-bottom: 0;
+		line-height: 1.1;
+	}
+
+
+	.container__3 {
+		flex-direction: unset;
+	
+	}
+
+	.text__sector3{
+		margin-top: 120px;
+
+	}
+
+	.text3 {
+		font-size: 16px;
+		margin-top: 220px;
+		margin-right: 100px;
+	}
+ .intro {
+	height: 0;
+ }
+
+
+	.quote__section {
+		margin-top: -120px;
+	}
+
+	.quote {
+		font-size: 18px;
+		margin-top: 85px;
+	}
+
+
+	.btn {
+		font-size: 19px;
+		letter-spacing: 6px;
+	}
+
+}
