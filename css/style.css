@@ -365,7 +365,7 @@ h1 {
 
    .text {
 	font-size: 16px;
-	line-height: 1.1;
+
    }
 
    br {
@@ -463,7 +463,6 @@ h2 {
 }
 
 .quote__section {
-    display: flex;
     justify-content: center;
 }
 
@@ -534,7 +533,7 @@ h2 {
 	.text2 {
 		font-size: 16px;
 		margin-bottom: 0;
-		line-height: 1.1;
+
 	}
 
 
@@ -560,7 +559,7 @@ h2 {
 	}
 
 	.quote__section {
-		margin-top: -30px;
+		margin-top: 30px;
 	}
 
 	.quote {
@@ -578,4 +577,5 @@ h2 {
 	.intro {
 		height: 0;
 	}
+
 }
